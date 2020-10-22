@@ -395,7 +395,7 @@ class Controller(Actions):
             # thus they are blacklisted by default. Feel free to adjust this list to your linking when sub-classing
             self.black_listed_buttons += [6, 7, 8, 11, 12, 13]
         self.event_definition = event_definition if event_definition else Event
-        self.event_format = event_format if event_format else "LhBB"
+        self.event_format = event_format if event_format else "3Bh2b"
         self.event_size = struct.calcsize(self.event_format)
         self.event_history = []
 
